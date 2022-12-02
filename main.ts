@@ -1,5 +1,5 @@
 input.onButtonPressed(Button.A, function () {
-    radio.sendNumber(44)
+    radio.sendNumber(4)
 })
 basic.forever(function () {
 	
