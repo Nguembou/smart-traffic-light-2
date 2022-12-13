@@ -1,5 +1,5 @@
 input.onButtonPressed(Button.A, function () {
-    Entry = "" + Entry + "A"
+    password = Entry[0]
 })
 input.onButtonPressed(Button.AB, function () {
     if (password == Entry) {
@@ -8,15 +8,20 @@ input.onButtonPressed(Button.AB, function () {
         pins.servoWritePin(AnalogPin.P0, 0)
     }
     basic.pause(200)
-    Entry = ""
+    Entry = [""]
 })
 input.onButtonPressed(Button.B, function () {
-    Entry = "" + Entry + "B"
+    password = Entry[1]
 })
-let Entry = ""
-let password = ""
+let password: string[] = []
+let Entry: string[] = []
 basic.showIcon(IconNames.No)
-password = "BABAA"
-Entry = ""
+Entry = [""]
+password = [
+"A",
+"B",
+"A",
+"A"
+]
 pins.servoWritePin(AnalogPin.P0, 0)
 radio.setGroup(79)
