@@ -9,6 +9,7 @@ input.onButtonPressed(Button.AB, function () {
     } else {
         basic.showIcon(IconNames.Sad)
         music.playTone(175, music.beat(BeatFraction.Whole))
+        basic.showIcon(IconNames.No)
         Entry = ""
     }
     basic.pause(200)
