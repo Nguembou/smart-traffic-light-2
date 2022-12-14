@@ -6,17 +6,22 @@ input.onButtonPressed(Button.AB, function () {
         radio.sendNumber(4)
         basic.showIcon(IconNames.Yes)
         pins.servoWritePin(AnalogPin.P0, 0)
+    } else {
+        basic.showIcon(IconNames.Sad)
+        music.playTone(175, music.beat(BeatFraction.Whole))
+        Entry = ""
     }
     basic.pause(200)
     Entry = ""
 })
 input.onButtonPressed(Button.B, function () {
-    Entry = "" + Entry + "B"
+    basic.showIcon(IconNames.No)
+    radio.sendNumber(6)
 })
 let Entry = ""
 let password = ""
 basic.showIcon(IconNames.No)
-password = "BABAA"
+password = "AAAAA"
 Entry = ""
 pins.servoWritePin(AnalogPin.P0, 0)
 radio.setGroup(79)
