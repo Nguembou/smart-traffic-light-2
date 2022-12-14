@@ -22,7 +22,7 @@ input.onButtonPressed(Button.B, function () {
 let Entry = ""
 let password = ""
 basic.showIcon(IconNames.No)
-password = "AAAAA"
+password = "AAAAAAAA"
 Entry = ""
 pins.servoWritePin(AnalogPin.P0, 0)
 radio.setGroup(79)
